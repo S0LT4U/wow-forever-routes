@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WoW Forever Dungeon Routes</title>
+<meta name="description" content="Boss locations and suggested routes for every WoW Forever dungeon, levels 13-60.">
+<meta property="og:title" content="WoW Forever Dungeon Routes">
+<meta property="og:description" content="Boss locations and suggested routes for every WoW Forever dungeon.">
+<meta property="og:image" content="img/08_razorfen_kraul_thumb.webp">
+<style>
+:root{--bg:#141518;--panel:#1e1f23;--panel2:#26282d;--line:#33363c;--text:#e8e6e1;--muted:#9a978f;--gold:#f0c85a;--cyan:#00dcff;--red:#dc1e1e;--purple:#8a4cd0}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--gold)}
+header{padding:28px 20px 10px;max-width:1200px;margin:0 auto}
+h1{margin:0;font-size:30px;color:var(--gold);letter-spacing:.3px}
+.sub{color:var(--muted);margin:4px 0 0}
+.controls{max-width:1200px;margin:16px auto 0;padding:0 20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.search{flex:1 1 240px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:8px;font-size:15px}
+.chip{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:999px;cursor:pointer;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--gold);color:#1b1b1b;border-color:var(--gold);font-weight:600}
+.lvl{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+.lvl input{width:64px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px;border-radius:8px}
+main{max-width:1200px;margin:0 auto;padding:18px 20px 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .12s,border-color .12s}
+.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--gold);outline:none}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;background:#000}
+.card .body{padding:12px 14px}
+.card h2{margin:0;font-size:18px}
+.meta{color:var(--muted);font-size:13px;margin-top:2px}
+.badge{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px 8px;font-size:12px;margin-right:6px;color:var(--text)}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+/* detail */
+.detail{display:none}
+.detail.on{display:block}
+.back{display:inline-block;margin-bottom:14px;cursor:pointer;color:var(--gold);text-decoration:none;font-size:15px}
+.dhead{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+.dhead h2{margin:0;font-size:28px;color:var(--gold)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:8px;cursor:pointer;font-size:14px;text-decoration:none}
+.btn:hover{border-color:var(--gold)}
+.layout{display:grid;grid-template-columns:1fr 300px;gap:18px;margin-top:14px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+.mapwrap{background:#000;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mapwrap img{width:100%;display:block;cursor:zoom-in}
+.side{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;align-self:start}
+.side h3{margin:0 0 8px;font-size:16px}
+.boss{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--line)}
+.boss:last-child{border-bottom:0}
+.dot{flex:0 0 auto;min-width:26px;height:26px;border-radius:13px;background:var(--red);border:2px solid #fff;color:#fff;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;padding:0 5px}
+.dot.r{background:var(--purple)}
+.dot.w{background:transparent;border:0;color:var(--gold);min-width:auto;padding:0;font-size:13px;height:auto}
+.notes{color:var(--muted);font-size:14px;margin-top:12px}
+.notes p{margin:6px 0}
+.legend{display:flex;gap:14px;font-size:13px;color:var(--muted);margin-top:10px}
+.legend span::before{content:"";display:inline-block;width:22px;height:5px;border-radius:3px;margin-right:6px;vertical-align:middle;background:var(--cyan)}
+.legend span.y::before{background:#ffd200}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--gold);color:#1b1b1b;padding:8px 16px;border-radius:8px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;overflow:auto;z-index:10;cursor:zoom-out}
+.lightbox.on{display:block}
+.lightbox img{display:block;max-width:none;width:min(1800px,180vw);margin:20px auto}
+footer{max-width:1200px;margin:0 auto;padding:20px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <h1>WoW Forever Dungeon Routes</h1>
+  <p class="sub">Boss locations and a suggested route for each dungeon. Click a map to view it full size, or grab the PNG for Discord.</p>
+</header>
+
+<div class="controls" id="controls">
+  <input class="search" id="q" type="search" placeholder="Search dungeons, bosses or zones…" aria-label="Search">
+  <button class="chip" data-band="all" aria-pressed="true">All</button>
+  <button class="chip" data-band="13-29">13–29</button>
+  <button class="chip" data-band="30-44">30–44</button>
+  <button class="chip" data-band="45-54">45–54</button>
+  <button class="chip" data-band="55-60">55–60</button>
+  <label class="lvl">My level <input id="mylvl" type="number" min="1" max="60" placeholder="—"></label>
+</div>
+
+<main>
+  <section id="list"><div class="grid" id="grid"></div><p class="empty" id="empty" hidden>No dungeons match.</p></section>
+  <section class="detail" id="detail"></section>
+</main>
+
+<div class="lightbox" id="lb"><img id="lbimg" alt=""></div>
+<div class="toast" id="toast">Link copied</div>
+
+<footer>
+  Boss positions from <a href="https://metaforge.app/wow-forever/map" rel="noopener">MetaForge</a> spawn data; map art © Blizzard Entertainment.
+  Routes are drawn by hand and approximate. Fan-made, not affiliated with Blizzard or MetaForge.
+  Not yet covered: Scholomance, Hall of Thanes, Ruins of Lordaeron, Excavation Site: Wetlands, City of Dalaran, Alcaz Prison, Blackmaw Hold, Krol'dok Stronghold, The Shaper's Terrace.
+</footer>
+
+<script src="dungeons.js"></script>
+<script>
+let D=[], band='all';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function inBand(d){ if(band==='all') return true; const [a,b]=band.split('-').map(Number); return d.min<=b && d.max>=a; }
+function matches(d,q){ if(!q) return true; q=q.toLowerCase(); return (d.name+' '+d.zone+' '+d.bosses.map(b=>b.t).join(' ')).toLowerCase().includes(q); }
+function lvlOk(d){ const v=parseInt($('#mylvl').value); if(!v) return true; return v>=d.min-2 && v<=d.max; }
+function renderList(){
+  const q=$('#q').value.trim(); const items=D.filter(d=>inBand(d)&&matches(d,q)&&lvlOk(d));
+  $('#grid').innerHTML=items.map(d=>{
+    const nb=d.bosses.filter(b=>/^\d+$/.test(b.k)).length;
+    return `<a class="card" href="#${d.slug}"><img loading="lazy" src="img/${d.file}_thumb.webp" alt="${esc(d.name)} map"><div class="body"><h2>${esc(d.name)}</h2><div class="meta"><span class="badge">Lvl ${d.min}–${d.max}</span>${esc(d.zone)}${nb?` · ${nb} stops`:''}</div></div></a>`;}).join('');
+  $('#empty').hidden=items.length>0;
+}
+function dot(k){ if(/^\d+$/.test(k)) return `<span class="dot">${esc(k)}</span>`; if(k.length<=2) return `<span class="dot r">${esc(k)}</span>`; return `<span class="dot w">${esc(k)}:</span>`; }
+function renderDetail(d){
+  $('#detail').innerHTML=`<a class="back" href="#">← All dungeons</a>
+  <div class="dhead"><div><h2>${esc(d.name)}</h2><div class="meta"><span class="badge">Lvl ${d.min}–${d.max}</span>${esc(d.zone)}</div></div>
+  <div class="actions"><a class="btn" href="img/${d.file}.png" download>Download PNG (for Discord)</a><button class="btn" id="copy">Copy link</button></div></div>
+  <div class="layout"><div class="mapwrap"><img id="full" src="img/${d.file}.webp" alt="${esc(d.name)} route map"></div>
+  <aside class="side"><h3>Route order</h3>${d.bosses.map(b=>`<div class="boss">${dot(b.k)}<div>${esc(b.t)}</div></div>`).join('')}
+  <div class="legend"><span>route</span><span class="y">backtrack / alternate</span></div>
+  ${d.notes.length?`<div class="notes">${d.notes.map(n=>`<p>${esc(n)}</p>`).join('')}</div>`:''}</aside></div>`;
+  $('#full').onclick=()=>{ $('#lbimg').src=`img/${d.file}.webp`; $('#lb').classList.add('on'); };
+  $('#copy').onclick=()=>{ navigator.clipboard?.writeText(location.href).then(()=>{ $('#toast').classList.add('on'); setTimeout(()=>$('#toast').classList.remove('on'),1400); }); };
+}
+function route(){
+  const slug=location.hash.slice(1); const d=D.find(x=>x.slug===slug);
+  if(d){ renderDetail(d); $('#detail').classList.add('on'); $('#list').hidden=true; $('#controls').style.display='none'; document.title=d.name+' · WoW Forever Dungeon Routes'; window.scrollTo(0,0); }
+  else { $('#detail').classList.remove('on'); $('#list').hidden=false; $('#controls').style.display=''; document.title='WoW Forever Dungeon Routes'; renderList(); }
+}
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{ band=c.dataset.band; document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===c)); renderList(); });
+$('#q').oninput=renderList; $('#mylvl').oninput=renderList;
+$('#lb').onclick=()=>$('#lb').classList.remove('on');
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') $('#lb').classList.remove('on'); });
+window.addEventListener('hashchange',route);
+D=window.DUNGEONS; route();
+</script>
+</body>
+</html>

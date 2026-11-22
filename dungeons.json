@@ -1,0 +1,721 @@
+[
+ {
+  "slug": "ragefire-chasm",
+  "file": "01_ragefire_chasm",
+  "name": "Ragefire Chasm",
+  "zone": "Orgrimmar",
+  "min": 13,
+  "max": 18,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Oggleflint"
+   },
+   {
+    "k": "2",
+    "t": "Taragaman the Hungerer"
+   },
+   {
+    "k": "3",
+    "t": "Jergosh the Invoker"
+   },
+   {
+    "k": "4",
+    "t": "Bazzalan"
+   }
+  ],
+  "notes": []
+ },
+ {
+  "slug": "deadmines",
+  "file": "02_deadmines",
+  "name": "Deadmines",
+  "zone": "Westfall",
+  "min": 17,
+  "max": 26,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Rhahk'Zor"
+   },
+   {
+    "k": "2",
+    "t": "Miner Johnson (side room)"
+   },
+   {
+    "k": "3",
+    "t": "Sneed + Sneed's Shredder"
+   },
+   {
+    "k": "4",
+    "t": "Gilnid (Goblin Foundry)"
+   },
+   {
+    "k": "5",
+    "t": "Mr. Smite"
+   },
+   {
+    "k": "6",
+    "t": "Captain Greenskin"
+   },
+   {
+    "k": "7",
+    "t": "Edwin VanCleef"
+   },
+   {
+    "k": "8",
+    "t": "Cookie"
+   }
+  ],
+  "notes": []
+ },
+ {
+  "slug": "wailing-caverns",
+  "file": "03_wailing_caverns",
+  "name": "Wailing Caverns",
+  "zone": "Northern Barrens",
+  "min": 17,
+  "max": 24,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Lady Anacondra"
+   },
+   {
+    "k": "2",
+    "t": "Lord Cobrahn"
+   },
+   {
+    "k": "3",
+    "t": "Lord Pythas"
+   },
+   {
+    "k": "4",
+    "t": "Kresh (in the river)"
+   },
+   {
+    "k": "5",
+    "t": "Skum"
+   },
+   {
+    "k": "6",
+    "t": "Lord Serpentis"
+   },
+   {
+    "k": "7",
+    "t": "Verdan the Everliving"
+   },
+   {
+    "k": "8",
+    "t": "Mutanus (Naralex escort end)"
+   }
+  ],
+  "notes": [
+   "After the four Fanglords, talk to the Disciple of Naralex near the entrance to start the escort (yellow line)."
+  ]
+ },
+ {
+  "slug": "shadowfang-keep",
+  "file": "04_shadowfang_keep",
+  "name": "Shadowfang Keep",
+  "zone": "Silverpine Forest",
+  "min": 22,
+  "max": 30,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Rethilgore (cells)"
+   },
+   {
+    "k": "2",
+    "t": "Razorclaw the Butcher"
+   },
+   {
+    "k": "3",
+    "t": "Baron Silverlaine"
+   },
+   {
+    "k": "4",
+    "t": "Commander Springvale"
+   },
+   {
+    "k": "5",
+    "t": "Odo the Blindwatcher"
+   },
+   {
+    "k": "6",
+    "t": "Fenrus the Devourer"
+   },
+   {
+    "k": "7",
+    "t": "Wolf Master Nandos"
+   },
+   {
+    "k": "8",
+    "t": "Archmage Arugal"
+   },
+   {
+    "k": "R",
+    "t": "Deathsworn Captain (rare)"
+   }
+  ],
+  "notes": [
+   "Multi-level keep: panels go in the order you reach each level. Fel Steed / Arugal's Voidwalker have no fixed spot."
+  ]
+ },
+ {
+  "slug": "the-stockade",
+  "file": "05_the_stockade",
+  "name": "The Stockade",
+  "zone": "Stormwind",
+  "min": 24,
+  "max": 32,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Targorr the Dread"
+   },
+   {
+    "k": "2",
+    "t": "Kam Deepfury"
+   },
+   {
+    "k": "3",
+    "t": "Hamhock"
+   },
+   {
+    "k": "4",
+    "t": "Bazil Thredd"
+   },
+   {
+    "k": "5",
+    "t": "Dextren Ward (west wing)"
+   },
+   {
+    "k": "R",
+    "t": "Bruegal Ironknuckle (rare)"
+   }
+  ],
+  "notes": [
+   "East wing first, then come back through the main hall for the west wing (yellow)."
+  ]
+ },
+ {
+  "slug": "blackfathom-deeps",
+  "file": "06_blackfathom_deeps",
+  "name": "Blackfathom Deeps",
+  "zone": "Ashenvale",
+  "min": 24,
+  "max": 32,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Ghamoo-ra"
+   },
+   {
+    "k": "2",
+    "t": "Lady Sarevess"
+   },
+   {
+    "k": "3",
+    "t": "Gelihast"
+   },
+   {
+    "k": "4",
+    "t": "Lorgus Jett"
+   },
+   {
+    "k": "5",
+    "t": "Old Serra'kis (optional)"
+   },
+   {
+    "k": "6",
+    "t": "Twilight Lord Kelris"
+   },
+   {
+    "k": "7",
+    "t": "Aku'mai"
+   }
+  ],
+  "notes": [
+   "Baron Aquanis is quest-summoned and has no fixed spawn. Kelris' room opens the path to Aku'mai."
+  ]
+ },
+ {
+  "slug": "gnomeregan",
+  "file": "07_gnomeregan",
+  "name": "Gnomeregan",
+  "zone": "Dun Morogh",
+  "min": 29,
+  "max": 38,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Viscous Fallout"
+   },
+   {
+    "k": "2",
+    "t": "Electrocutioner 6000"
+   },
+   {
+    "k": "3",
+    "t": "Crowd Pummeler 9-60"
+   },
+   {
+    "k": "4",
+    "t": "Mekgineer Thermaplugg"
+   },
+   {
+    "k": "R",
+    "t": "Dark Iron Ambassador (rare)"
+   }
+  ],
+  "notes": [
+   "Techbot (near the entrance) and Grubbis (event in the Hall of Gears) have no fixed spawn in the data.",
+   "The back door on the Engineering Labs level is a shortcut entrance via the Workshop."
+  ]
+ },
+ {
+  "slug": "razorfen-kraul",
+  "file": "08_razorfen_kraul",
+  "name": "Razorfen Kraul",
+  "zone": "Southern Barrens",
+  "min": 30,
+  "max": 40,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Roogug (optional - warrior quest)"
+   },
+   {
+    "k": "2",
+    "t": "Aggem Thorncurse"
+   },
+   {
+    "k": "3",
+    "t": "Death Speaker Jargba"
+   },
+   {
+    "k": "4",
+    "t": "Overlord Ramtusk + 2 Spearhides"
+   },
+   {
+    "k": "5",
+    "t": "Agathelos the Raging"
+   },
+   {
+    "k": "6",
+    "t": "Charlga Razorflank (final)"
+   },
+   {
+    "k": "W",
+    "t": "Willix the Importer (escort)"
+   },
+   {
+    "k": "R",
+    "t": "Rares: Earthcaller Halmgar / Blind Hunter"
+   }
+  ],
+  "notes": [
+   "Yellow line: backtrack from Agathelos to Charlga.",
+   "Willix the Importer: drop off the cliff after the last boss - he's in the nearby tent."
+  ]
+ },
+ {
+  "slug": "scarlet-monastery",
+  "file": "09_scarlet_monastery",
+  "name": "Scarlet Monastery",
+  "zone": "Tirisfal Glades",
+  "min": 34,
+  "max": 45,
+  "bosses": [
+   {
+    "k": "Graveyard",
+    "t": "1 Interrogator Vishas, 2 Bloodmage Thalnos"
+   },
+   {
+    "k": "Library",
+    "t": "1 Houndmaster Loksey, 2 Arcanist Doan"
+   },
+   {
+    "k": "Armory",
+    "t": "1 Herod"
+   },
+   {
+    "k": "Cathedral",
+    "t": "1 Fairbanks (side), 2 Mograine, 3 Whitemane"
+   },
+   {
+    "k": "R",
+    "t": "GY rares: Ironspine / Azshir / Fallen Champion"
+   }
+  ],
+  "notes": [
+   "Each wing is its own instance - numbers restart per wing. Mograine first; Whitemane comes when he dies."
+  ]
+ },
+ {
+  "slug": "razorfen-downs",
+  "file": "10_razorfen_downs",
+  "name": "Razorfen Downs",
+  "zone": "Southern Barrens",
+  "min": 37,
+  "max": 46,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Tuten'kash (ring the gong in the Caller's Chamber)"
+   },
+   {
+    "k": "2",
+    "t": "Mordresh Fire Eye (Bone Pile)"
+   },
+   {
+    "k": "3",
+    "t": "Glutton"
+   },
+   {
+    "k": "4",
+    "t": "Amnennar the Coldbringer (final)"
+   },
+   {
+    "k": "R",
+    "t": "Ragglesnout (rare)"
+   },
+   {
+    "k": "H",
+    "t": "Henry Stern (cooking/alchemy recipes)"
+   }
+  ],
+  "notes": [
+   "Tuten'kash's spot is from the map art (no spawn data). Plaguemaw the Rotting has no fixed spawn listed."
+  ]
+ },
+ {
+  "slug": "uldaman",
+  "file": "11_uldaman",
+  "name": "Uldaman",
+  "zone": "Badlands",
+  "min": 41,
+  "max": 51,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Lost Dwarves: Baelog, Eric, Olaf"
+   },
+   {
+    "k": "2",
+    "t": "Revelosh"
+   },
+   {
+    "k": "3",
+    "t": "Ironaya (Map Chamber)"
+   },
+   {
+    "k": "4",
+    "t": "Obsidian Sentinel"
+   },
+   {
+    "k": "5",
+    "t": "Ancient Stone Keeper"
+   },
+   {
+    "k": "6",
+    "t": "Galgann Firehammer"
+   },
+   {
+    "k": "7",
+    "t": "Grimlok"
+   },
+   {
+    "k": "8",
+    "t": "Archaedas (final)"
+   }
+  ],
+  "notes": [
+   "Get the Staff of Prehistoria / amulet quests done for the Map Chamber and Archaedas' door."
+  ]
+ },
+ {
+  "slug": "zul-farrak",
+  "file": "12_zulfarrak",
+  "name": "Zul'Farrak",
+  "zone": "Tanaris",
+  "min": 44,
+  "max": 54,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Antu'sul (side area)"
+   },
+   {
+    "k": "2",
+    "t": "Theka the Martyr"
+   },
+   {
+    "k": "3",
+    "t": "Witch Doctor Zum'rah"
+   },
+   {
+    "k": "4",
+    "t": "Pyramid: Sgt. Bly event + Nekrum / Sezz'ziz"
+   },
+   {
+    "k": "5",
+    "t": "Hydromancer Velratha + Gahz'rilla (gong)"
+   },
+   {
+    "k": "6",
+    "t": "Chief Ukorz Sandscalp"
+   },
+   {
+    "k": "R",
+    "t": "Rares: Sandarr Dunereaver / Zerillis"
+   }
+  ],
+  "notes": [
+   "Free the prisoners at the pyramid (4) before Ukorz. Gahz'rilla is summoned at Velratha's pool."
+  ]
+ },
+ {
+  "slug": "maraudon",
+  "file": "13_maraudon",
+  "name": "Maraudon",
+  "zone": "Desolace",
+  "min": 46,
+  "max": 55,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Noxxion (orange)"
+   },
+   {
+    "k": "2",
+    "t": "Razorlash (orange)"
+   },
+   {
+    "k": "3",
+    "t": "Tinkerer Gizlock (purple)"
+   },
+   {
+    "k": "4",
+    "t": "Lord Vyletongue (purple)"
+   },
+   {
+    "k": "5",
+    "t": "Landslide"
+   },
+   {
+    "k": "6",
+    "t": "Celebras the Cursed"
+   },
+   {
+    "k": "7",
+    "t": "Rotgrip"
+   },
+   {
+    "k": "8",
+    "t": "Princess Theradras (final)"
+   },
+   {
+    "k": "R",
+    "t": "Meshlok the Harvester (rare)"
+   }
+  ],
+  "notes": [
+   "Pick one wing (cyan = orange, yellow = purple) or clear both; both lead to the inner caves via Earth Song Falls."
+  ]
+ },
+ {
+  "slug": "sunken-temple",
+  "file": "14_sunken_temple",
+  "name": "Sunken Temple",
+  "zone": "Swamp of Sorrows",
+  "min": 50,
+  "max": 60,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "Atal'alarion (Pit of Sacrifice) + balcony trolls"
+   },
+   {
+    "k": "2",
+    "t": "Avatar of Hakkar (Sanctum)"
+   },
+   {
+    "k": "3",
+    "t": "Jammal'an the Prophet + Ogom"
+   },
+   {
+    "k": "4",
+    "t": "Dragons: Dreamscythe / Weaver"
+   },
+   {
+    "k": "5",
+    "t": "Morphaz + Hazzas"
+   },
+   {
+    "k": "6",
+    "t": "Shade of Eranikus (final)"
+   }
+  ],
+  "notes": [
+   "Temple is multi-level: balcony trolls ring the upper level around the pit. Kill all 6 to open Jammal'an's barrier."
+  ]
+ },
+ {
+  "slug": "blackrock-depths",
+  "file": "15_blackrock_depths",
+  "name": "Blackrock Depths",
+  "zone": "Blackrock Mountain",
+  "min": 52,
+  "max": 60,
+  "bosses": [
+   {
+    "k": "1",
+    "t": "High Interrogator Gerstahn"
+   },
+   {
+    "k": "2",
+    "t": "Ring of Law (Lord Roccor etc.)"
+   },
+   {
+    "k": "3",
+    "t": "Bael'Gar"
+   },
+   {
+    "k": "4",
+    "t": "Lord Incendius"
+   },
+   {
+    "k": "5",
+    "t": "Fineous Darkvire"
+   },
+   {
+    "k": "6",
+    "t": "Golem Lord Argelmach"
+   },
+   {
+    "k": "7",
+    "t": "General Angerforge"
+   },
+   {
+    "k": "8",
+    "t": "Phalanx (Grim Guzzler)"
+   },
+   {
+    "k": "9",
+    "t": "Ambassador Flamelash"
+   },
+   {
+    "k": "10",
+    "t": "Magmus"
+   },
+   {
+    "k": "11",
+    "t": "Emperor Thaurissan + Moira"
+   },
+   {
+    "k": "G",
+    "t": "Houndmaster Grebmar"
+   }
+  ],
+  "notes": [
+   "After Flamelash, the Seven are in the Summoners' Tomb on the way to the Lyceum.",
+   "Lots of optional side bosses (Plugger, Hurley, Stilgiss/Verek, Pyromancer Loregrain) - skip as needed."
+  ]
+ },
+ {
+  "slug": "blackrock-spire",
+  "file": "16_blackrock_spire",
+  "name": "Blackrock Spire",
+  "zone": "Blackrock Mountain",
+  "min": 55,
+  "max": 60,
+  "bosses": [
+   {
+    "k": "LBRS",
+    "t": "1 Omokk, 2 Vosh'gajin, 3 Voone, 4 Smolderweb"
+   },
+   {
+    "k": "LBRS",
+    "t": "5 Zigris, 6 Halycon (+Gizrul), 7 Wyrmthalak"
+   },
+   {
+    "k": "UBRS",
+    "t": "U1 Emberseer, U2 Rend (Gyth), U3 The Beast"
+   },
+   {
+    "k": "UBRS",
+    "t": "U4 Valthalak, U5 Goraluk, U6 Drakkisath"
+   }
+  ],
+  "notes": [
+   "BRS is a stacked vertical maze, so this one shows where each boss sits per level rather than a drawn path.",
+   "Solakar Flamewreath (Rookery) and Urok Doomhowl are event spawns with no fixed spot."
+  ]
+ },
+ {
+  "slug": "dire-maul",
+  "file": "17_dire_maul",
+  "name": "Dire Maul",
+  "zone": "Feralas",
+  "min": 55,
+  "max": 60,
+  "bosses": [
+   {
+    "k": "East",
+    "t": "1 Pusillin (chase), 2 Zevrim, 3 Hydrospawn, 4 Lethtendris, 5 Alzzin"
+   },
+   {
+    "k": "West",
+    "t": "1 Tendris, 2 Illyanna, 3 Kalendris, 4 Immol'thar, 5 Tortheldrin"
+   },
+   {
+    "k": "North",
+    "t": "1 Mol'dar, 2 Fengus, 3 Slip'kik, 4 Kromcrush, 5 King Gordok"
+   },
+   {
+    "k": "R / K",
+    "t": "Tsu'zee (rare) / Stomper Kreeg (drink vendor)"
+   }
+  ],
+  "notes": [
+   "Three separate instances - numbers restart per wing. West: kill the 5 pylon guardians before Immol'thar.",
+   "North tribute run: don't kill the guards (Mol'dar, Fengus, Slip'kik, Kromcrush) - trick them instead."
+  ]
+ },
+ {
+  "slug": "stratholme",
+  "file": "18_stratholme",
+  "name": "Stratholme",
+  "zone": "Eastern Plaguelands",
+  "min": 58,
+  "max": 60,
+  "bosses": [
+   {
+    "k": "Live",
+    "t": "1 Hearthsinger Forresten, 2 Timmy (square), 3 Malor, 4 Cannon Master Willey"
+   },
+   {
+    "k": "Live",
+    "t": "5 Archivist Galford, 6 Balnazzar"
+   },
+   {
+    "k": "Undead",
+    "t": "1 Nerub'enkan, 2 Anastari, 3 Maleki (ziggurats), 4 Barthilas"
+   },
+   {
+    "k": "Undead",
+    "t": "5 Ramstein (Slaughter Square), 6 Baron Rivendare"
+   },
+   {
+    "k": "R",
+    "t": "Stonespine (rare)"
+   }
+  ],
+  "notes": [
+   "Timmy, Balnazzar and Ramstein spots are from the map art (no spawn data). The Unforgiven / Postmaster spawn on events."
+  ]
+ }
+]
